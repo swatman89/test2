@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+// props = משתנים בתוך אובייקט
+// METHOD = פונקציה בתוך אובייקט
+    var car1_obj = {
+      name:"mazda",
+      color:"red",
+      year:2020,
+      addToHtml:function(){
+        document.body.innerHTML += `<h2 style="background:${this.color};">${this.name}</h2>`
+      }
+    }
+
+    var car2_obj = {
+      name:"fiat",
+      color:"Grey",
+      year:2010,
+      addToHtml:function(){
+        document.body.innerHTML += `<h2 style="background:${this.color};">${this.name}</h2>`
+      }
+    }
+
+
+    window.onload = function(){
+      car1_obj.addToHtml();
+      car2_obj.addToHtml();
+      // document.body.innerHTML += car1_obj.color + "<br>";
+      // document.body.innerHTML += car2_obj.year + "<br>";
+  }
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
